@@ -6,18 +6,17 @@ Este projeto é uma aplicação web simples que simula uma clínica médica, per
 
 ---
 
-## 📁 Organização do Projeto
-
+## Organização do Projeto
 clinica-saude-integrada/
-│
-├── clinica-api/          # Backend (API Flask)
-│   ├── Apy.py
-│   ├── profissionais.json
-│   └── requirements.txt
-│
-└── clinica-frontend/     # Frontend (HTML/CSS/JS)
-    └── main.html
-```
+
+clinica-api/          # Backend (API Flask)
+- Apy.py
+- profissionais.json
+- requirements.txt
+
+clinica-frontend/     # Frontend (HTML/CSS/JS)
+- main.html
+
 
 ---
 
@@ -53,7 +52,7 @@ clinica-saude-integrada/
 - Python 3.7 ou superior
 - Navegador moderno (Chrome, Firefox, Edge)
 
-### ▶️ Passos para executar o Backend (API)
+### Passos para executar o Backend (API)
 
 1. Abra um terminal e navegue até o diretório da API:
 
@@ -76,13 +75,13 @@ Após iniciado, o backend estará disponível em:
 
 ---
 
-### 🌐 Executando o Frontend
+### Executando o Frontend
 
 Abra o arquivo `main.html` diretamente no navegador, ou use uma extensão como **Live Server** do Visual Studio Code para maior praticidade.
 
 ---
 
-## 📦 Estrutura dos dados (JSON)
+## Estrutura dos dados (JSON)
 
 Exemplo do arquivo `profissionais.json`:
 
@@ -100,7 +99,7 @@ Exemplo do arquivo `profissionais.json`:
 
 ---
 
-## 🧩 Instalando Flask e Flask-Cors manualmente
+## Instalando Flask e Flask-Cors manualmente
 
 Caso precise instalar manualmente (fora do arquivo `requirements.txt`), utilize os comandos:
 
