@@ -166,7 +166,7 @@
 
     <script>
         window.onload = async () => {
-            const res = await fetch('http://127.0.0.1:5000/profissionais');
+            const res = await fetch('https://clinica-api.onrender.com/profissionais');
             const data = await res.json();
 
             const equipeContainer = document.getElementById('equipe-container');
@@ -200,7 +200,7 @@
                 const nome = nomeDropdown.value;
                 const query = new URLSearchParams({ especialidade: esp, nome: nome });
 
-                const res = await fetch(`http://127.0.0.1:5000/profissionais?${query}`);
+                const res = await fetch(`'https://clinica-api.onrender.com/profissionais?${query}`);
                 const resultado = await res.json();
 
                 resultadoConsulta.innerHTML = resultado.length
