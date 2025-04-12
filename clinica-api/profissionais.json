@@ -7,12 +7,6 @@
       "foto": "ana_silva.png"
     },
     {
-      "nome": "Pedro Lima",
-      "especialidade": "Nutricionista",
-      "disponivel": false,
-      "foto": "pedro_lima.png"
-    },
-    {
       "nome": "Mariana Costa",
       "especialidade": "Radiologista",
       "disponivel": true,
@@ -29,6 +23,12 @@
       "especialidade": "Nutricionista",
       "disponivel": true,
       "foto": "carla_souza.png"
+    },
+    {
+      "nome": "Pedro Lima",
+      "especialidade": "Nutricionista",
+      "disponivel": false,
+      "foto": "pedro_lima.png"
     }
   ]
 }
