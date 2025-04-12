@@ -3,7 +3,7 @@ from flask_cors import CORS
 import json
 
 app = Flask(__name__)
-CORS(app)  # Habilita o CORS para permitir requisições do frontend
+CORS(app, resources={r"/*": {"origins": "*"}})  # Habilita o CORS para permitir requisições do frontend
 
 # Função para carregar os dados dos profissionais
 def carregar_profissionais():
