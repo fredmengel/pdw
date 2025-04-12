@@ -200,7 +200,7 @@
                 const nome = nomeDropdown.value;
                 const query = new URLSearchParams({ especialidade: esp, nome: nome });
 
-                const res = await fetch(`'https://pdw.onrender.com/profissionais?${query}`);
+                const res = await fetch(`https://pdw.onrender.com/profissionais?${query}`);
                 const resultado = await res.json();
 
                 resultadoConsulta.innerHTML = resultado.length
