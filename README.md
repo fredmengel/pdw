@@ -10,12 +10,16 @@ Este projeto é uma aplicação web simples que simula uma clínica médica, per
 clinica-saude-integrada/
 
 clinica-api/          # Backend (API Flask)
-- Apy.py
+- apy.py
 - profissionais.json
 - requirements.txt
 
 clinica-frontend/     # Frontend (HTML/CSS/JS)
 - main.html
+-fotos
+  -profissionais
+  -servicos
+
 
 
 ---
