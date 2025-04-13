@@ -20,7 +20,12 @@ clinica-frontend/     # Frontend (HTML/CSS/JS)
   -profissionais
   -servicos
 
+---
 
+## Links Públicos
+API no Render: https://pdw.onrender.com/profissionais
+
+Site no GitHub Pages: https://fredmengel.github.io
 
 ---
 
@@ -75,7 +80,7 @@ python Apy.py
 
 Após iniciado, o backend estará disponível em:
 
- **`http://127.0.0.1:5000/profissionais`**
+ **`http://127.0.0.1:10000/profissionais`**
 
 ---
 
