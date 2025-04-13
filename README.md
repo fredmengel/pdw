@@ -1,103 +1,75 @@
-pdw
-Sistematização da matéria PDW
-
 Clínica Saúde Integrada
 
-Este projeto é uma aplicação web simples que simula uma clínica médica, permitindo a consulta dinâmica de especialidades e profissionais, verificar disponibilidade dos médicos e enviar mensagens diretamente para a clínica.
+Sistematização da matéria PDW. Este projeto é uma aplicação web simples que simula uma clínica médica, permitindo a consulta de especialidades, verificação de disponibilidade de profissionais e envio de mensagens.
 
-Organização do Projeto
-clinica-saude-integrada/
-
-
-clinica-api/ # Backend (API Flask)
-
-apy.py
-profissionais.json
-requirements.txt
-clinica-frontend/ # Frontend (HTML/CSS/JS)
-
-main.html
-
--fotos 
-
--profissionais 
-
--servicos
-
-Funcionalidades
-
-Consulta de especialidades médicas;
-
-Listagem dinâmica de profissionais;
-
-Busca por especialidade e nome do profissional;
-
-Exibição de disponibilidade dos profissionais;
-
-Formulário para contato com a clínica.
-
-Tecnologias utilizadas
-
-Backend:
-
-Python (Flask)
-
-Flask-Cors (para permitir requisições cross-origin)
-
-Frontend:
-
-HTML/CSS
-
-JavaScript (Vanilla JS)
-
-Fetch API
-
-Como executar o projeto
-
-Pré-requisitos
-
-Python 3.7 ou superior
-
-Navegador moderno (Chrome, Firefox, Edge)
-
-Passos para executar o Backend (API)
-
-Abra um terminal e navegue até o diretório da API:
-
-cd clinica-api
+Organização do projeto:
 
 
-Instale as dependências:
+*Backend: clinica-api (contém apy.py, profissionais.json e requirements.txt)
 
-pip install -r requirements.txt
+*Frontend: clinica-frontend/fotos (subpastas profissionais e servicos)
 
-Inicie a aplicação Flask:
+*Página principal: index.html (na raiz)
 
-python Apy.py
+*Funcionalidades:
 
-Após iniciado, o backend estará disponível em:
+Consulta de especialidades médicas
 
-http://127.0.0.1:5000/profissionais
+Listagem dinâmica de profissionais com fotos
 
-Executando o Frontend
-Abra o arquivo main.html diretamente no navegador, ou use uma extensão como Live Server do Visual Studio Code para maior praticidade.
+Busca por especialidade e nome
 
-Estrutura dos dados (JSON)
-Exemplo do arquivo profissionais.json:
+Exibição de disponibilidade
+
+Formulário de contato
+
+*Tecnologias utilizadas:
+
+Backend (Render): Python (Flask) e Flask-Cors
+
+Frontend (GitHub Pages): HTML5, CSS3, JavaScript (Vanilla JS) e Fetch API
+
+Links públicos:
+
+API no Render: https://pdw.onrender.com/profissionais
+
+Site no GitHub Pages: https://fredmengel.github.io
+
+Como executar localmente:
+Requisitos:
+
+Python 3.7+
+
+Navegador moderno
+
+Passos:
+
+Acesse a pasta clinica-api
+
+Instale as dependências: pip install -r requirements.txt
+
+Execute: python apy.py
+
+A API estará disponível em http://127.0.0.1:10000/profissionais
+
+Para abrir o frontend localmente, abra o arquivo index.html no navegador ou use o Live Server no VSCode.
+
+Exemplo de profissionais.json:
 
 {
-  "profissionais": [
-    {"nome": "Ana Silva", "especialidade": "Cardiologista" },
-    {"nome": "Pedro Lima", "especialidade": "Nutricionista"},
-    {"nome": "Mariana Costa", "especialidade": "Radiologista"},
-    {"nome": "João Pereira", "especialidade": "Dermatologista"},
-    {"nome": "Carla Souza", "especialidade": "Nutricionista"}
-  ]
+"profissionais": [
+{ "nome": "Ana Silva", "especialidade": "Cardiologista", "disponivel": true, "foto": "ana_silva.jpg" },
+{ "nome": "Pedro Lima", "especialidade": "Nutricionista", "disponivel": false, "foto": "pedro_lima.jpg" },
+{ "nome": "Mariana Costa", "especialidade": "Radiologista", "disponivel": true, "foto": "mariana_costa.jpg" },
+{ "nome": "João Pereira", "especialidade": "Dermatologista", "disponivel": true, "foto": "joao_pereira.jpg" },
+{ "nome": "Carla Souza", "especialidade": "Nutricionista", "disponivel": true, "foto": "carla_souza.jpg" }
+]
 }
-Instalando Flask e Flask-Cors manualmente
-Caso precise instalar manualmente (fora do arquivo requirements.txt), utilize os comandos:
 
-pip install Flask==3.0.2 pip install flask-cors==4.0.0
+Instalação manual de dependências (se não usar requirements.txt):
 
-👨‍💻 Desenvolvido por:
-Frederico Martins Engel
+pip install Flask==3.0.2
+
+pip install flask-cors==4.0.0
+
+Desenvolvido por: Frederico Martins Engel
